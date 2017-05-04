@@ -10,14 +10,14 @@
 
 module top ( clk,
              rst,
-			 // Instruction Memory
-			 IM_Address,
+             // Instruction Memory
+             IM_Address,
              Instruction,
-			 // Data Memory
-			 DM_Address,
-			 DM_enable,
-			 DM_Write_Data,
-			 DM_Read_Data);
+             // Data Memory
+             DM_Address,
+             DM_enable,
+             DM_Write_Data,
+             DM_Read_Data);
 
 	parameter data_size = 32;
 	parameter mem_size  = 16;	
@@ -32,7 +32,7 @@ module top ( clk,
 	output [mem_size-1:0]  DM_Address;
 	output DM_enable; // aka. MemWrite in P&H
 	output [data_size-1:0] DM_Write_Data;	
-    input  [data_size-1:0] DM_Read_Data;
+	input  [data_size-1:0] DM_Read_Data;
 	
 	// write your code here
 	// PC

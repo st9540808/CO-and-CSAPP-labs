@@ -1,24 +1,24 @@
 // Controller
 
 module Controller ( opcode,
-					funct,
-					// write your code in here
-					RegDst,
-					RegWrite,
-					ALUSrc,
-					ALUOp,
-					MemWrite, // MemRead signal is not used here
-					MemtoReg,
-					Branch,
-					Jump,
-					Jal,
-					Jr,
-					lw_or_lh,
-					sw_or_sh
+                    funct,
+                    // write your code in here
+                    RegDst,
+                    RegWrite,
+                    ALUSrc,
+                    ALUOp,
+                    MemWrite, // MemRead signal is not used here
+                    MemtoReg,
+                    Branch,
+                    Jump,
+                    Jal,
+                    Jr,
+                    lw_or_lh,
+                    sw_or_sh
 					);
 
 	input  [5:0] opcode;
-    input  [5:0] funct;
+	input  [5:0] funct;
 
 	// write your code in here
 	output reg RegDst;      // select rt(0) or rd(1) field
