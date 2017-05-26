@@ -62,4 +62,5 @@ init:
 	addi $a1, $s0, 40
 	j sort
 
-exit:jr $ra
+exit:
+	jr $ra
